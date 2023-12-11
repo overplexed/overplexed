@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overplexed is a leading AI research, development, and robotics company. We specialize in AI research, robotics development, data analysis, and machine learning. Contact us to explore our services.">
+    <meta name="og:image" content=".\static\flower-abs.png">
+    <title>Overplexed - AI Research and Robotics Development</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  
+   {%include "navbar.html"%}
+{%if user == none%}
+<div class="notify">
+  <p>We are launching our first AI model - ARMEO soon. <a href="{{ url_for('login') }}">Sign Up</a> to know more.</p>
+</div>
+{%endif%}
+    <!-- Analysis of Reaction and Motion of Everyday Objects -->
+    <div class="main">
+
+        <section><div class="sec-co">
+     <h1>Exploring the Boundless <span class="highlight">Frontiers of Innovation</span></h1>
+     
+          
+       </div>
+    
+        </section>
+       
+    </div>
+    <!-- <div class="half" style="background: #03031F;"></div> -->
+
+
+
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" class="lg-svg" viewBox="0 0 317.38 240.43">
+            <defs>
+              <style>.cls-1{fill:#282828;}</style>
+              <clipPath id="clipPath2090">
+                <rect style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.785;stroke-dasharray:none;stroke-opacity:1" width="170.17731" height="140.50537" x="-1.8840361" y="125.525" rx="12.896648"/>
+              </clipPath>
+            </defs>
+            <g>
+              <g transform="translate(0.13862776,0.14440393)">
+                <rect class="cls-1" x="31.250256" y="153.82211" width="242.93042" height="82.326218" rx="40.823177"/>
+                <ellipse class="cls-1" cx="66.009254" cy="63.87756" rx="59.111347" ry="59.596581"/>
+                <path class="cls-1" d="M310.1353,13.99194H204.16529a33.037313,33.308511 0 0 0-33.03731,33.308511v33.327798a33.037313,33.308511 0 0 0 33.03731,33.308511h51.9759A33.037313,33.308511 0 0 0 289.16894,80.628249V47.300451a33.295566,33.568884 0 0 0-0.53563,-5.863224l12.3579,-7.174734A18.976847,19.132625 0 0 0 310.1353,13.99194Z"/>
+              </g>
+            </g>
+          </svg>
+        <h1>Learning to learn.</h1>
+    </footer>
+
+</body>
+</html>
+

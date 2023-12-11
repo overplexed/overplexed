@@ -1,0 +1,39 @@
+.formContainer {
+    width: min(400px, 90vw);
+    height: auto;
+}
+.inputDiv {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b4b4b4;
+    margin:10px 0;
+    border-radius: 10px;
+  
+
+}
+.inputDiv>input {
+    width: 90%;
+    background: transparent;
+    height: auto;
+    border: none;
+    outline: none;
+       font-family: var(--jost);
+}
+.btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background: #000;
+    font-size: 18px;
+    color: #b4b4b4;
+    outline: none;
+    border: none;   font-family: var(--jost);
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

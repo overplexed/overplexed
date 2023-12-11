@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+
+</head>
+<body>
+
+    {%include "navbar.html"%}
+   <div class="main">
+ <div class="formContainer">
+       
+    <form method="POST">
+        <div class="inputDiv">
+                <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="inputDiv">
+                <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>Donot have an account? <a href="{{ url_for('register') }}">Create an account</a></p>
+                {% if error %}
+                    <p style="color: red;">{{ error }}</p>
+                {% endif %}
+            </form>
+         
+ </div>
+  </div>
+</body>
+</html>
