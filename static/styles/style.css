@@ -72,6 +72,19 @@ nav .nav-links {
     text-decoration: none;
     color: #1e2e3e;
 }
+.signin {
+    width: 100px;
+    height: 40px;
+    background: #1b1b1b;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #dfe9d1;
+    font-family: var(--jost);
+}
+.logout {
+    background: #404804;
+}
 /* navbar styles ends */
 .main {
     width: 100%;
