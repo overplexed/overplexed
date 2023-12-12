@@ -8,7 +8,6 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from dotenv import load_dotenv
 
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
 load_dotenv()
 
 # Configure Flask-Login
@@ -131,6 +130,7 @@ def logout():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
+    app.secret_key = os.getenv("SECRET_KEY")
     app.config['SESSION_COOKIE_SECURE'] = True
 
     # Check MongoDB connection status before starting the app
