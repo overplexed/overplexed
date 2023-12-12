@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Overplexed is a leading AI research, development, and robotics company. We specialize in AI research, robotics development, data analysis, and machine learning. Contact us to explore our services.">
-    <meta name="og:image" content=".\static\flower-abs.png">
+    <meta name="og:image" content=".\static\logo.png">
     <title>Overplexed - AI Research and Robotics Development</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -14,11 +14,7 @@
 
   
    {%include "navbar.html"%}
-{%if user == none%}
-<div class="notify">
-  <p>We are launching our first AI model - ARMEO soon. <a href="{{ url_for('login') }}">Sign Up</a> to know more.</p>
-</div>
-{%endif%}
+
     <!-- Analysis of Reaction and Motion of Everyday Objects -->
     <div class="main">
 
